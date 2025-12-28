@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="منتوجات البيت - أكلات منزلية، ملابس، وأعمال يدوية بجودة عالية"
+    />
+    <title>منتوجات البيت</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-brand">منتوجات البيت</div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">الرئيسية</a></li>
+          <li><a href="#categories" class="nav-link">الفئات</a></li>
+          <li><a href="#food" class="nav-link">المأكولات</a></li>
+          <li><a href="#clothing" class="nav-link">الملابس</a></li>
+          <li><a href="#handmade" class="nav-link">الأعمال اليدوية</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title fade-in">منتوجات البيت</h1>
+        <p class="hero-subtitle fade-in-delay">
+          أكلات منزلية، ملابس، وأعمال يدوية بجودة عالية
+        </p>
+        <a
+          href="https://wa.me/212650438029?text=السلام%20عليكم%2C%20بغيت%20نعرف%20المزيد%20على%20منتوجاتكم"
+          class="cta-button fade-in-delay-2"
+          target="_blank"
+        >
+          اطلب الآن عبر واتساب
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <h2 class="section-title">فئات منتوجاتنا</h2>
+        <div class="categories-grid">
+          <!-- Food Category -->
+          <div class="category-card" data-category="food">
+            <div class="category-icon">🍲</div>
+            <h3 class="category-title">المأكولات</h3>
+            <p class="category-description">أطباق منزلية طازجة ولذيذة</p>
+            <button class="category-button" onclick="scrollToSection('food')">
+              استكشف
+            </button>
+          </div>
+
+          <!-- Clothing Category -->
+          <div class="category-card" data-category="clothing">
+            <div class="category-icon">👗</div>
+            <h3 class="category-title">الملابس</h3>
+            <p class="category-description">ملابس عصرية وتقليدية</p>
+            <button
+              class="category-button"
+              onclick="scrollToSection('clothing')"
+            >
+              استكشف
+            </button>
+          </div>
+
+          <!-- Handmade Category -->
+          <div class="category-card" data-category="handmade">
+            <div class="category-icon">🧵</div>
+            <h3 class="category-title">الأعمال اليدوية</h3>
+            <p class="category-description">صناعة يدوية مغربية أصيلة</p>
+            <button
+              class="category-button"
+              onclick="scrollToSection('handmade')"
+            >
+              استكشف
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Products Section -->
+    <section class="products-section" id="food">
+      <div class="container">
+        <h2 class="section-title">المأكولات المنزلية</h2>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/E8B4A8/FFFFFF?text=كسكس"
+                alt="كسكس"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">كسكس بالخضر</h3>
+              <p class="product-description">
+                كسكس طازج محضر بالطريقة التقليدية مع الخضر الطازجة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('كسكس بالخضر')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=طاجين"
+                alt="طاجين"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">طاجين باللحم</h3>
+              <p class="product-description">
+                طاجين مغربي أصيل بلحم طري وتوابل طبيعية
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('طاجين باللحم')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/C9A66B/FFFFFF?text=بسطيلة"
+                alt="بسطيلة"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">بسطيلة بالدجاج</h3>
+              <p class="product-description">
+                بسطيلة مغربية فاخرة محضرة بعناية تامة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('بسطيلة بالدجاج')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/E8C4A8/FFFFFF?text=حلويات"
+                alt="حلويات"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">حلويات مغربية</h3>
+              <p class="product-description">
+                كعب الغزال، شباكية، وحلويات تقليدية متنوعة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('حلويات مغربية')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clothing Products Section -->
+    <section class="products-section alternate" id="clothing">
+      <div class="container">
+        <h2 class="section-title">الملابس</h2>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/B8A8D8/FFFFFF?text=قفطان"
+                alt="قفطان"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">قفطان مغربي</h3>
+              <p class="product-description">
+                قفطان تقليدي مطرز بألوان زاهية وتصميم عصري
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('قفطان مغربي')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/A8C8E8/FFFFFF?text=جلابة"
+                alt="جلابة"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">جلابة للرجال</h3>
+              <p class="product-description">
+                جلابة مغربية فاخرة بتصميم كلاسيكي وجودة عالية
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('جلابة للرجال')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/E8A8B8/FFFFFF?text=تكشيطة"
+                alt="تكشيطة"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">تكشيطة للعروس</h3>
+              <p class="product-description">
+                تكشيطة مغربية فاخرة للأعراس والمناسبات الخاصة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('تكشيطة للعروس')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/C8B8A8/FFFFFF?text=ملابس"
+                alt="ملابس أطفال"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">ملابس للأطفال</h3>
+              <p class="product-description">
+                ملابس مريحة وجميلة للأطفال بتصاميم محلية
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('ملابس للأطفال')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Handmade Products Section -->
+    <section class="products-section" id="handmade">
+      <div class="container">
+        <h2 class="section-title">الأعمال اليدوية</h2>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/A8D8C8/FFFFFF?text=سلة"
+                alt="سلة"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">سلة مغربية</h3>
+              <p class="product-description">
+                سلة منسوجة يدوياً بألوان طبيعية ومتينة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('سلة مغربية')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/D8C8A8/FFFFFF?text=طرز"
+                alt="طرز"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">طرز مغربي</h3>
+              <p class="product-description">
+                وسائد وأغطية مطرزة يدوياً بتصاميم تقليدية
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('طرز مغربي')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/E8D8A8/FFFFFF?text=زربية"
+                alt="زربية"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">زربية أمازيغية</h3>
+              <p class="product-description">
+                سجاد مغربي منسوج يدوياً بنقوش أمازيغية أصيلة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('زربية أمازيغية')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/400x300/B8C8D8/FFFFFF?text=فخار"
+                alt="فخار"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">فخار مزخرف</h3>
+              <p class="product-description">
+                أواني فخارية مغربية مزخرفة يدوياً للزينة
+              </p>
+              <button
+                class="whatsapp-button"
+                onclick="orderProduct('فخار مزخرف')"
+              >
+                طلب عبر واتساب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-content">
+          <p class="contact-text">
+            نحن في خدمتكم للإجابة على جميع استفساراتكم وتلبية طلباتكم
+          </p>
+          <a
+            href="https://wa.me/212650438029?text=السلام%20عليكم%2C%20بغيت%20نعرف%20المزيد%20على%20منتوجاتكم"
+            class="contact-button"
+            target="_blank"
+          >
+            تواصل عبر واتساب
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">© 2025 – منتوجات البيت</p>
+          <p class="footer-subtext">جميع الحقوق محفوظة</p>
+        </div>
+        <a
+          href="https://wa.me/212650438029"
+          class="footer-whatsapp"
+          target="_blank"
+        >
+          <span class="whatsapp-icon">📱</span> واتساب
+        </a>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
